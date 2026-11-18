@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SI-BEL - Sistem Informasi Beasiswa dan Lomba Sekolah">
+  <title>Masuk | SI-BEL Sekolah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="welcome-panel" aria-label="Informasi SI-BEL">
+      <nav class="brand">
+        <div class="brand-mark">S</div>
+        <span>SI-BEL<span class="brand-dot">.</span></span>
+        <span class="brand-caption">SEKOLAH</span>
+      </nav>
+
+      <div class="welcome-copy">
+        <p class="eyebrow"><span></span> PUSAT INFORMASI PRESTASI SISWA</p>
+        <h1>Setiap peluang adalah <em>awal</em> dari prestasi.</h1>
+        <p class="intro">Temukan informasi beasiswa dan lomba, persiapkan dirimu, dan raih kesempatan untuk berkembang.</p>
+      </div>
+
+      <div class="illustration-card" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="star star-one">✦</div>
+        <div class="star star-two">✧</div>
+        <div class="book book-back"></div>
+        <div class="book book-front">
+          <div class="book-line"></div><div class="book-line short"></div>
+        </div>
+        <div class="trophy">
+          <div class="cup-handle left"></div><div class="cup-handle right"></div>
+          <div class="cup-top">✦</div><div class="cup-stem"></div><div class="cup-base"></div>
+        </div>
+        <div class="plant"><i></i><i></i><i></i><b></b></div>
+        <div class="floating-note note-a">BEASISWA</div>
+        <div class="floating-note note-b">LOMBA</div>
+      </div>
+
+      <div class="panel-footer">
+        <span>Informasi tepat, kesempatan lebih dekat.</span>
+        <span>© 2026 SI-BEL</span>
+      </div>
+    </section>
+
+    <section class="login-panel" aria-label="Form masuk">
+      <div class="login-content">
+        <div class="mobile-brand"><div class="brand-mark">S</div><strong>SI-BEL<span>.</span></strong></div>
+        <div class="login-heading">
+          <p class="eyebrow">SELAMAT DATANG KEMBALI</p>
+          <h2>Masuk ke akunmu</h2>
+          <p>Gunakan akun yang telah terdaftar untuk melanjutkan.</p>
+        </div>
+
+        <form id="loginForm">
+          <label for="username">Username atau email</label>
+          <div class="input-wrap">
+            <span class="input-icon">✉</span>
+            <input id="username" name="username" type="text" placeholder="Masukkan username atau email" autocomplete="username" required>
+          </div>
+
+          <div class="password-label">
+            <label for="password">Password</label>
+          </div>
+          <div class="input-wrap">
+            <span class="input-icon">▣</span>
+            <input id="password" name="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+            <button class="toggle-password" type="button" id="togglePassword" aria-label="Tampilkan password">Lihat</button>
+          </div>
+
+          <button class="submit-button" type="submit">Masuk <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="login-note">
+          <div class="note-icon">i</div>
+          <p>Belum memiliki akun? Hubungi admin sekolah untuk mendapatkan akses SI-BEL.</p>
+        </div>
+      </div>
+      <footer class="login-footer">Sistem Informasi Beasiswa dan Lomba Sekolah</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
